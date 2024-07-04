@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    color: #004d4d;
+}
+
+header, main, footer {
+    padding: 5%;
+}
+
+nav {
+    background-color: #d0604c;
+    margin: 0 5%; 
+    border-radius: 30px;
+    padding: 1%;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    text-align: justify;
+}
+
+.row.full-width {
+    grid-column: 1 / -1;
+}
+
+.row.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.column {
+    background-color: #d0604c;
+    padding: 20px;
+    text-align: justify;
+    color: white; 
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+footer .half-width {
+    padding: 20px;
+}
+
+header .logo {
+    width: 10%; 
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer .small-logo {
+    width: 10%; 
+    height: auto;
+}
+
+footer .half-width {
+    display: flex;
+    margin-left: auto;
+}
+
+h2 {
+    color: #d0604c;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.promo-banner {
+    background-image: url('images/banner.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+    color: #004d4d;
+    height: 200px;
+}
+
+
+.promo-banner p {
+    position: relative;
+    z-index: 1;
+    font-size: 1em; 
+    font-weight: 600; 
+    text-align: center;
+}
+
+.promo-banner h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em; 
+    font-weight: 900; 
+    text-align: center;
+    padding-top: 2%;
+}
+
+.service-image {
+    width: 100%; 
+    height: auto; 
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to fit the container */
+}
